@@ -168,3 +168,4 @@ xPlayer.showHelpNotification -> TriggerClientEvent('QBCore:Notify')
 xPlayer.showNotification -> TriggerClientEvent('QBCore:Notify')
 xPlayer.triggerEvent -> None (dont bother)
 xPlayer.updateCoords -> None (dont bother) 
+
