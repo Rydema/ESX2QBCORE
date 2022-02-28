@@ -1,0 +1,34 @@
+ghmattimysql:execute('UPDATE... to oxmysql:execute('UPDATE...
+
+ghmattimysql:execute('DELETE... to oxmysql:execute('DELETE...
+
+ghmattimysql:execute('SELECT... to oxmysql:fetch('SELECT...
+
+ghmattimysql:execute('INSERT... to oxmysql:insert('INSERT...
+
+
+['ghmattimysql']:execute('UPDATE... to .oxmysql:execute('UPDATE...
+
+['ghmattimysql']:execute('DELETE... to .oxmysql:execute('DELETE...
+
+['ghmattimysql']:execute('SELECT... to .oxmysql:fetch('SELECT...
+
+['ghmattimysql']:execute('INSERT... to .oxmysql:insert('INSERT...
+
+
+
+exports.ghamttimysql.execute('INSERT INTO')
+
+to
+
+exports.oxmysql:insert('INSERT INTO')
+
+
+
+If a query uses SELECT then you would use fetchSync so an exception would be
+
+local result = exports.ghamttimysql.executeSync('SELECT * FROM whatever')
+
+to
+
+local result = exports.oxmysql:fetchSync('SELECT * FROM whatever', {})
